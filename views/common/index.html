@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%include masterHeader.ejs%>
+</head>
+
+<body>
+	<%include masterTemplate.ejs%>
+	
+	<!-- TEMPLATING -->	
+	<template id="homeTemplate">
+		<%include ../Home/home.ejs%>
+	</template>
+	
+	<template id="MERTemplate">
+		<%include ../MER/MER.ejs%>
+	</template>
+	
+	<template id="EWNTemplate">
+		<%include ../EWN/EWN.ejs%>
+	</template>
+	
+    <script>
+		window.onload = changeTemplate('homeTemplate');
+    </script>
+</body>
+
+</html>
