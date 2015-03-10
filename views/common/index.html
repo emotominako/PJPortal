@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
 	<%include masterHeader.ejs%>
+	<!-- Test Page Script -->
+ 	<%include ../TestPage/script.ejs%>
 </head>
 
 <body>
 	<%include masterTemplate.ejs%>
 	
 	<!-- TEMPLATING -->	
-	<template id="homeTemplate">
+	<template id="home">
 		<%include ../Home/home.ejs%>
 	</template>
 	
-	<template id="MERTemplate">
+	<template id="MER">
 		<%include ../MER/MER.ejs%>
 	</template>
 	
-	<template id="EWNTemplate">
+	<template id="EWN">
 		<%include ../EWN/EWN.ejs%>
 	</template>
 	
+	<template id="testPage">
+		<%include ../TestPage/test_page.ejs%>
+	</template>
+	
     <script>
-		window.onload = changeTemplate('homeTemplate');
+		window.onload = changeTemplate();
     </script>
+    
 </body>
 
 </html>
