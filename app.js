@@ -17,7 +17,7 @@ app.use('/', express.static(__dirname + "/view/common"));
 app.use('/images', express.static(__dirname + "/public/images"));
 app.use('/routes', express.static(__dirname + "/routes"));
 
-app.listen(3000);
+//app.listen(3000);
 
 console.log('Server running at port 3000');
 
