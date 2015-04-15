@@ -2,7 +2,8 @@ var express = require('express');
 var Router  = require('router');
 var router  = Router();
 var mongoose = require('mongoose');
-var dbURI = 'mongodb://localhost/test';
+//var dbURI = 'mongodb://localhost/test';
+var dbURI = 'mongodb://heroku_app35059938:e0pqhkror89isstfld2btjaa28@ds053688.mongolab.com:53688/heroku_app35059938';
 
 var userSchema = new mongoose.Schema({
 	_id : Number,
