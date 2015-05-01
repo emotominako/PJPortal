@@ -25,6 +25,10 @@ app.controller('Ctrl', function($scope, $http, name, employeeNumber, birthday, h
 	  return $http.post('/?f=birthday&v=' + $scope.user.birthday);
   };
   
+  /*$scope.updateSkills = function(){
+	  return $http.post('/?f=skills&v=' + $scope.user.skills);
+  };*/
+  
   $scope.updateWorkExperience = function(){
 	  return $http.post('/?f=hasWorkExperience&v=' + $scope.user.hasWorkExperience);
   };

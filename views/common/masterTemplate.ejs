@@ -12,9 +12,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/?p=home">Project Portal</a>
-
+                
                 <ul class="nav navbar-top-links navbar-left">
-               <!--   <li><img alt="Brand" src="./images/MMPJ_ico.gif"></li>-->
+                  <li><img alt="Brand" src="./images/MMPJ_ico.gif"></li>
                   <li class="dropdown" >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" class="active">MM Project (0-1234-0)<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -24,11 +24,11 @@
                     </ul>
                   </li>
                 </ul>
-
+            
             </div>
             <!-- /.navbar-header -->
             <!-- /.�w�b�_�� ��-->
-
+            
             <!-- �w�b�_�� �E-->
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
@@ -154,7 +154,7 @@
             </ul>
             <!-- /.navbar-top-links -->
             <!-- /.�w�b�_�� �E-->
-
+            
             <!-- �T�C�h�o�[ -->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -183,48 +183,48 @@
                                     <a href="/?p=EWN">EWN</a>
                                 </li>
                                 <li>
-                                    <a href="/?p=FS">FS <span class="badge">1</span> </a>
+                                    <a href="#">FS <span class="badge">1</span> </a>
                                 </li>
-
+                               
                                 <li>
-                                    <a href="/?p=Master">Master</a>
+                                    <a href="#">Master</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="https://app.box.com/" target="_blank"><i class="glyphicon glyphicon-duplicate"></i> File Storage</a>
+                            <a href="tables.html"><i class="glyphicon glyphicon-duplicate"></i> File Storage</a>
                         </li>
                         <li>
-                            <a href="/?p=PhotoGallery"><i class="glyphicon glyphicon-picture"></i> Photo Gallery</a>
+                            <a href="tables.html"><i class="glyphicon glyphicon-picture"></i> Photo Gallery</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Site Administration <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/?p=UnderConstruction">PJ Member List</a>
+                                    <a href="#">PJ Member List</a>
                                 </li>
                                 <li>
-                                    <a href="/?p=UnderConstruction">Address Book</a>
+                                    <a href="#">Address Book</a>
                                 </li>
                                 <li>
-                                    <a href="/?p=UnderConstruction">Busines Trip Support</a>
+                                    <a href="#">Busines Trip Support</a>
                                 </li>
 
                                 <li>
                                     <a href="#">Applications<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="/?p=UnderConstruction">PAAF</a>
+                                            <a href="#">PAAF</a>
                                         </li>
                                         <li>
-                                            <a href="/?p=UnderConstruction">TAF</a>
+                                            <a href="#">TAF</a>
                                         </li>
                                         <li>
-                                            <a href="/?p=UnderConstruction">Expense</a>
+                                            <a href="#">Expense</a>
                                         </li>
                                         <li>
-                                            <a href="/?p=UnderConstruction">Master</a>
+                                            <a href="#">Master</a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
@@ -237,6 +237,9 @@
                         	<ul class="nav nav-second-level">
                                 <li>
                                     <a href="/?p=editableTextArea">Editable text-area</a>
+                                </li>
+                                <li>
+                                    <a href="/?p=responsiveTable">Responsive Table</a>
                                 </li>
                             </ul>
                         </li>
@@ -263,11 +266,11 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-
+			
 			<!-- PAGE CONTENT -->
-
+			
 			<div id="divContent"> THIS IS THE PAGE CONTENT</div>
-
+   
     <!-- jQuery -->
     <script src="/routes/javascript/bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -279,7 +282,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/routes/javascript/dist/js/sb-admin-2.js"></script>
-
+	
     <script>
 		function changeTemplate(){
 			var templateName;
@@ -288,10 +291,11 @@
 			}else{
 				templateName = 'home';
 			}
-
+			
 			var divContent = document.getElementById('divContent');
 			var templateContent = document.getElementById(templateName).content;
 			divContent.innerHTML = null;
 			divContent.appendChild(document.importNode(templateContent, true));
 		}
     </script>
+    
